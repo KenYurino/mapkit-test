@@ -2,8 +2,8 @@
 //  MapKitTestTests.swift
 //  MapKitTestTests
 //
-//  Created by 百合野健 on R 2/08/29.
-//  Copyright © Reiwa 2 KenYurino. All rights reserved.
+//  Created by KenYurino on 2020/08/29.
+//  Copyright © 2020 KenYurino. All rights reserved.
 //
 
 import XCTest

@@ -2,16 +2,14 @@
 //  AppDelegate.swift
 //  MapKitTest
 //
-//  Created by 百合野健 on R 2/08/29.
-//  Copyright © Reiwa 2 KenYurino. All rights reserved.
+//  Created by KenYurino on 2020/08/29.
+//  Copyright © 2020 KenYurino. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,6 +30,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
-

@@ -15,6 +15,7 @@
 		5033001124FA4019009777BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5033000F24FA4019009777BD /* LaunchScreen.storyboard */; };
 		5033001C24FA4019009777BD /* MapKitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033001B24FA4019009777BD /* MapKitTestTests.swift */; };
 		5033002724FA4019009777BD /* MapKitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5033002624FA4019009777BD /* MapKitTestUITests.swift */; };
+		5033003824FA46CE009777BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5033003724FA46CE009777BD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		5033002224FA4019009777BD /* MapKitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5033002624FA4019009777BD /* MapKitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitTestUITests.swift; sourceTree = "<group>"; };
 		5033002824FA4019009777BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5033003524FA468C009777BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5033003724FA46CE009777BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5033003824FA46CE009777BD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +122,15 @@
 			path = MapKitTestUITests;
 			sourceTree = "<group>";
 		};
+		5033003424FA468C009777BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5033003724FA46CE009777BD /* MapKit.framework */,
+				5033003524FA468C009777BD /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5033FFF824FA4018009777BD = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 				5033001A24FA4019009777BD /* MapKitTestTests */,
 				5033002524FA4019009777BD /* MapKitTestUITests */,
 				5033000224FA4018009777BD /* Products */,
+				5033003424FA468C009777BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +152,7 @@
 				5033FFFD24FA4018009777BD /* Sources */,
 				5033FFFE24FA4018009777BD /* Frameworks */,
 				5033FFFF24FA4018009777BD /* Resources */,
+				501C6B4724FB2E7100C48EDA /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -253,6 +268,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		501C6B4724FB2E7100C48EDA /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5033001324FA4019009777BD /* Sources */ = {

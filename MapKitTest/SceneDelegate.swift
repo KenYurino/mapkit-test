@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  MapKitTest
 //
-//  Created by 百合野健 on R 2/08/29.
-//  Copyright © Reiwa 2 KenYurino. All rights reserved.
+//  Created by KenYurino on 2020/08/29.
+//  Copyright © 2020 KenYurino. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -48,6 +47,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
 }
-
